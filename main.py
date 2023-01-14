@@ -15,5 +15,16 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 # configure models
-class Response(db.Model):
-    __tablename__ = 'responses'
+# class Response(db.Model):
+#     __tablename__ = 'responses'
+
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+
+if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()
+    app.run(host='0.0.0.0', port=5000, debug=True)
