@@ -1,5 +1,5 @@
 # notfromparis-flask
-Branding for notfromparis
+Branding website for NOT FROM PARIS
 
 ## Initial Setup
 ```

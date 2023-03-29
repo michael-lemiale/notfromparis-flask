@@ -1,0 +1,57 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #000;
+}
+
+nav {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  background-color: #000;
+  color: #fff
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+input {
+  text-align: center;
+}
+
+
+/* CUSTOMIZE COMING SOON CONTAINER
+  -------------------------------------------------- */
+.comingSoon {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+/* CUSTOMIZE TOUR CONTAINER
+  -------------------------------------------------- */
+.tours {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+/* CUSTOMIZE MERCH CONTAINER
+  -------------------------------------------------- */
+.merch {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  width: 100%;
+}
+
+/* CUSTOMIZE MERCH CONTAINER
+  -------------------------------------------------- */
+.footer {
+  bottom: 0;
+  width: 100%;
+}
