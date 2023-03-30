@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -22,36 +24,41 @@ input {
   text-align: center;
 }
 
-
-/* CUSTOMIZE COMING SOON CONTAINER
+/* CUSTOMIZE ALERTS
   -------------------------------------------------- */
-.comingSoon {
-  padding-top: 10rem;
-  padding-bottom: 6rem;
-  margin-bottom: 4rem;
-  width: 100%;
+.alert {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 }
 
-/* CUSTOMIZE TOUR CONTAINER
+/* CUSTOMIZE MUSIC SECTION CONTAINER
   -------------------------------------------------- */
-.tours {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-bottom: 4rem;
+#music {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
   width: 100%;
 }
 
 /* CUSTOMIZE MERCH CONTAINER
   -------------------------------------------------- */
-.merch {
+#merch {
   padding-top: 6rem;
   padding-bottom: 6rem;
   width: 100%;
 }
 
-/* CUSTOMIZE MERCH CONTAINER
+/* CUSTOMIZE TOUR CONTAINER
+  -------------------------------------------------- */
+#tour {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  width: 100%;
+}
+
+/* CUSTOMIZE FOOTER
   -------------------------------------------------- */
 .footer {
   bottom: 0;
+  padding-top: 2rem;
   width: 100%;
 }
