@@ -53,6 +53,14 @@ input {
   width: 100%;
 }
 
+/* CUSTOMIZE BIO CONTAINER
+  -------------------------------------------------- */
+#bio {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  width: 100%;
+}
+
 /* CUSTOMIZE FOOTER
   -------------------------------------------------- */
 .footer {

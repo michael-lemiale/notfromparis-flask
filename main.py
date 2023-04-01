@@ -32,6 +32,11 @@ def home():
     # render home page
     return render_template('index.html')
 
+@app.route('/bio')
+def bio():
+    # render bio page
+    return render_template('bio.html')   
+
 @app.route('/register', methods=['POST'])
 def register():
     if request.method == 'POST':
@@ -45,8 +50,7 @@ def register():
         # return home page
         return redirect(url_for('home'))
     # if this errors for any reason, return to home page
-    return render_template('index.html')
-
+    return render_template('index.html') 
 
 if __name__ == '__main__':
     with app.app_context():
