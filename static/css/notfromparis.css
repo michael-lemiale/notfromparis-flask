@@ -4,12 +4,17 @@
 
 body {
   color: #000;
+  padding-bottom: 0;
 }
 
 nav {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  background-color: #000;
+  background-color: #000 !important;
+  color: #fff
+}
+
+a {
   color: #fff
 }
 
@@ -18,8 +23,21 @@ h1 {
   font-weight: 700;
 }
 
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
 input {
   text-align: center;
+}
+
+.nav-link {
+  color: #cdcdcd;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /* CUSTOMIZE ALERTS
@@ -27,6 +45,8 @@ input {
 .alert {
   padding-top: 8rem;
   padding-bottom: 4rem;
+  background-color: #000 !important;
+  color: #fff
 }
 
 /* CUSTOMIZE MUSIC SECTION CONTAINER
@@ -43,13 +63,15 @@ input {
   padding-top: 6rem;
   padding-bottom: 6rem;
   width: 100%;
+  background-color: #000 !important;
+  color: #fff
 }
 
 /* CUSTOMIZE TOUR CONTAINER
   -------------------------------------------------- */
 #tour {
   padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   width: 100%;
 }
 
@@ -64,7 +86,36 @@ input {
 /* CUSTOMIZE FOOTER
   -------------------------------------------------- */
 .footer {
-  bottom: 0;
   padding-top: 2rem;
+  margin-bottom: 0;
+  position: absolute;
   width: 100%;
+  background-color: #000 !important;
+  color: #fff
+}
+
+.form-control::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  opacity: 1; /* Firefox */
+}
+
+.form-control::-webkit-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.form-control:-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.form-control:-moz-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.form-control::-moz-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
