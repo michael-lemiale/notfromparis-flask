@@ -3,8 +3,8 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  color: #000;
-  padding-bottom: 0;
+  height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -15,7 +15,9 @@ nav {
 }
 
 a {
-  color: #fff
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 h1 {
@@ -86,10 +88,13 @@ input {
 /* CUSTOMIZE FOOTER
   -------------------------------------------------- */
 .footer {
-  padding-top: 2rem;
+  margin-top: auto;
   margin-bottom: 0;
-  position: absolute;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  bottom: 0;
   width: 100%;
+  height: auto;
   background-color: #000 !important;
   color: #fff
 }
