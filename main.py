@@ -16,7 +16,7 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 Bootstrap(app)
 
 # connect to db
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL_PG', 'sqlite:///grail.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL_PG', 'sqlite:///notfromparis.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 

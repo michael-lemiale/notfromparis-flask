@@ -34,6 +34,15 @@ input {
   text-align: center;
 }
 
+#nav-main-div {
+  width: 100%;
+}
+
+.img-responsive {
+  max-width: 100px;
+  max-height: 100px;
+}
+
 .nav-link {
   color: #cdcdcd;
 }
@@ -45,7 +54,7 @@ input {
 /* CUSTOMIZE ALERTS
   -------------------------------------------------- */
 .alert {
-  padding-top: 8rem;
+  padding-top: 12rem;
   padding-bottom: 4rem;
   background-color: #000 !important;
   color: #fff
@@ -54,7 +63,7 @@ input {
 /* CUSTOMIZE MUSIC SECTION CONTAINER
   -------------------------------------------------- */
 #music {
-  padding-top: 10rem;
+  padding-top: 14rem;
   padding-bottom: 6rem;
   width: 100%;
 }
@@ -80,9 +89,19 @@ input {
 /* CUSTOMIZE BIO CONTAINER
   -------------------------------------------------- */
 #bio {
-  padding-top: 10rem;
-  padding-bottom: 6rem;
+  padding-top: 14rem;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
   width: 100%;
+  height: auto;
+
+}
+
+#bio img {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-height: 750px;
 }
 
 /* CUSTOMIZE FOOTER
@@ -102,7 +121,8 @@ input {
 .form-control::placeholder {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
 .form-control::-webkit-input-placeholder {
