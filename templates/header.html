@@ -8,7 +8,7 @@
     <title>NOT FROM PARIS</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ static_url('img/favicon.ico')}}">
+    <link rel="icon" type="image/x-icon" href="{{ get_cdn_url('img/favicon.ico')}}">
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,7 +33,7 @@
                 <a class="navbar-brand mb-1" href="{{ url_for('home') }}">
                     <div class="d-flex flex-row align-items-center">
                         <img class="p-2 img-responsive rounded-circle shadow-4-strong" alt="avatar2"
-                            src="{{ static_url('img/nfp-profile.jpg') }}" />
+                            src="{{ get_cdn_url('img/nfp-profile.jpg') }}" />
                         <h1 class="p-2">NOT FROM PARIS</h1>
                     </div>
                 </a>

@@ -29,7 +29,7 @@ class EmailResponse(db.Model):
     time_created = db.Column(db.DateTime(), default=datetime.utcnow)
 
 @app.template_global()
-def static_url(filename):
+def get_cdn_url(filename):
     static_url = app.config.get('CDN_DOMAIN')
 
     if static_url:
