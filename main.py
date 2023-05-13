@@ -2,9 +2,9 @@ import os
 
 from datetime import datetime
 from dotenv import load_dotenv
+from urllib.parse import urljoin
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
-
 from flask import Flask, render_template, request, redirect, url_for, flash
 
 # load env vars
@@ -13,6 +13,7 @@ load_dotenv()
 # app config
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+app.config['CDN_DOMAIN'] = os.environ.get('CDN_DOMAIN')
 Bootstrap(app)
 
 # connect to db
@@ -26,6 +27,15 @@ class EmailResponse(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(250), unique=True, nullable=False)
     time_created = db.Column(db.DateTime(), default=datetime.utcnow)
+
+@app.template_global()
+def static_url(filename):
+    static_url = app.config.get('CDN_DOMAIN')
+
+    if static_url:
+        return urljoin(static_url, filename)
+
+    return url_for('static', filename=filename)
 
 @app.route('/')
 def home():

@@ -98,10 +98,14 @@ input {
 
 }
 
-#bio img {
+#bio-imgs-div {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+#bio img {
   max-height: 750px;
+  max-width: 700px;
 }
 
 /* CUSTOMIZE FOOTER

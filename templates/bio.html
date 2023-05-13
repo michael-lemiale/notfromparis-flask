@@ -6,13 +6,16 @@
     <div id="bio" class="container-fluid text-center flex-grow-1">
         <h1>BIO</h1>
         <h3>more to come soon</h3>
-        <img src="{{ url_for('static', filename='img/nfp-profile-side.jpg') }}" class="img-fluid" alt="Responsive image">
-        <img src="{{ url_for('static', filename='img/nfp-railroad.jpg') }}" class="img-fluid" alt="Responsive image">
-    </div>    
+        <div id="bio-imgs-div" class="d-flex flex-column align-items-center">
+            <img src="{{ static_url('img/nfp-railroad.jpg') }}" class="p-2 img-fluid" alt="Responsive image">
+            <img src="{{ static_url('img/nfp-profile-side.jpg') }}" class="p-2 img-fluid" alt="Responsive image">
+        </div>
+    </div>
 
 </main>
 
 <!-- FOOTER -->
 {% include "footer.html" %}
 </body>
+
 </html>
