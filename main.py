@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from urllib.parse import urljoin
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import exc
 from flask import Flask, render_template, request, redirect, url_for, flash
 
 # load env vars
@@ -55,10 +56,13 @@ def register():
         # get email from form and create db record
         new_email_response = EmailResponse(email = request.form.get('email'))        
         # commit to db
-        db.session.add(new_email_response)
-        db.session.commit()
-        # thank you message
-        flash("WELCOME,we're glad you're here")
+        try:
+            db.session.add(new_email_response)
+            db.session.commit()
+            # thank you message
+            flash("WELCOME,we're glad you're here")
+        except exc.IntegrityError:
+            flash("WELCOME BACK,looks like you're already signed up")
         # return home page
         return redirect(url_for('home'))
     # if this errors for any reason, return to home page
