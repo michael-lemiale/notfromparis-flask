@@ -16,8 +16,10 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 app.config['CDN_DOMAIN'] = os.environ.get('CDN_DOMAIN')
 Bootstrap(app)
 
+
 # connect to db
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL_PG', 'sqlite:///notfromparis.db')
+DB_URL = os.environ.get('DATABASE_URL')
+app.config['SQLALCHEMY_DATABASE_URI'] = DB_URL.replace('postgres://', 'postgresql://') if DB_URL else 'sqlite:///notfromparis.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
