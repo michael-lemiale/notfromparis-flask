@@ -13,16 +13,33 @@
 
     <div id="music" class="container-fluid text-center flex-grow-1">
         <h1>MUSIC</h1>
-        <h3>new sounds coming soon</h3>
+        <hr>
+        <div class="align-items-center justify-content-center">
+            <h3>our newest single drops on all platforms june 16th</h3>        
+            <h3>check out the preview below and <a class="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover" target="_blank" href="https://distrokid.com/hyperfollow/notfromparis/crying-out">pre-save now</a></h3>
+            <div class="audio-img-effect align-items-center justify-content-center">
+                <script src="{{ url_for('static', filename='js/playAudio.js')}}"></script>
+                <audio id="crying-out-preview" src="{{ get_cdn_url('audio/crying-out-preview.mp3') }}" preload="auto"></audio>
+                <div class="img-crying-out">
+                    <img src="{{ get_cdn_url('img/crying-out-cover-art-centered.png') }}" class="audio-img p-2 img-fluid" alt="Responsive image">
+                </div>
+                <div class="pause-play-icon-crying-out">
+                    <h1><i id="overlay-icon-play" class="overlay-icon fas fa-play"></i></h1>
+                    <h1><i id="overlay-icon-pause" class="overlay-icon fas fa-pause"></i></h1>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="merch" class="container-fluid bg-dark text-center text-white flex-grow-1">
         <h1>MERCH</h1>
+        <hr>
         <h3>new styles coming soon</h3>
     </div>
 
     <div id="tour" class="container-fluid text-center flex-grow-1">
         <h1>TOUR</h1>
+        <hr>
         <h3>new shows coming soon</h3>
     </div>
 </main>

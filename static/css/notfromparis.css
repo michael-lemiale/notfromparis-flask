@@ -14,12 +14,6 @@ nav {
   color: #fff
 }
 
-a {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
 h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -30,8 +24,60 @@ h3 {
   font-weight: 100;
 }
 
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 input {
   text-align: center;
+}
+
+header a {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#music img {
+  transition: all .4s linear;
+  -webkit-transition: all .4s linear;
+  -moz-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  opacity: 1;
+  overflow: hidden;
+}
+
+#music img:hover {
+  opacity: .75;
+}
+
+.audio-img-effect {
+  position: relative;
+}
+
+.pause-play-icon-crying-out {
+  opacity: 1;
+  position: absolute;
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 65%;
+  left: 50%;
+}
+
+.overlay-icon {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay-icon-pause {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
 }
 
 .img-thumbnail {
@@ -49,7 +95,12 @@ input {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
+  #music img {
+    max-width: 900px;
+    max-height: 600px;
+  }
+
   .img-fluid {
     max-width: 1920px;
     max-height: 1080px;
