@@ -80,12 +80,13 @@ header a {
   z-index: 1;
 }
 
-.img-thumbnail {
-  max-width: 50px;
-  max-height: 50px;
-  border: 0;
-  box-shadow: none;
-  padding: 0 !important;
+.bio-img:hover img {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transform: scale(1.5, 1.5);
+  cursor: pointer
 }
 
 @media only screen and (max-width: 600px) {
@@ -104,13 +105,6 @@ header a {
   .px-5 {
     padding-left: ($spacer * .25) !important;
     padding-right: ($spacer * .25) !important;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .img-thumbnail {
-    max-width: 100px;
-    max-height: 100px;
   }
 }
 
