@@ -94,6 +94,17 @@ header a {
     padding-bottom: 6rem;
     width: 100%;
   }
+
+  #bio {
+    padding-top: 8rem !important;
+    padding-bottom: 6rem;
+    width: 100%;
+  }
+
+  .px-5 {
+    padding-left: ($spacer * .25) !important;
+    padding-right: ($spacer * .25) !important;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -107,11 +118,6 @@ header a {
   #music img {
     max-width: 900px;
     max-height: 600px;
-  }
-
-  .img-fluid {
-    max-width: 1920px;
-    max-height: 1080px;
   }
 }
 
@@ -139,7 +145,7 @@ header a {
 /* CUSTOMIZE MUSIC SECTION CONTAINER
   -------------------------------------------------- */
 #music {
-  padding-top: 12rem;
+  padding-top: 11rem;
   padding-bottom: 6rem;
   width: 100%;
 }
@@ -165,18 +171,9 @@ header a {
 /* CUSTOMIZE BIO CONTAINER
   -------------------------------------------------- */
 #bio {
-  padding-top: 14rem;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-top: 11rem;
   width: 100%;
   height: auto;
-
-}
-
-#bio-imgs-div {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 /* CUSTOMIZE FOOTER
