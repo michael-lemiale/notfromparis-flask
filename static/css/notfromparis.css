@@ -17,7 +17,6 @@ nav {
 h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  padding: 2rem;
 }
 
 h3 {
@@ -72,13 +71,13 @@ header a {
 .pause-play-icon-crying-out {
   opacity: 1;
   position: absolute;
-  color: #000;
+  color: #fff;
   text-align: center;
   justify-content: center;
   align-items: center;
   z-index: 1;
   top: 65%;
-  left: 50%;
+  left: 49%;
 }
 
 .overlay-icon {
