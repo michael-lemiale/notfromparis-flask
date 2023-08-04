@@ -45,10 +45,10 @@ def home():
     # render home page
     return render_template('index.html')
 
-@app.route('/bio')
-def bio():
-    # render bio page
-    return render_template('bio.html')   
+@app.route('/press-kit')
+def pressKit():
+    # render press kit page
+    return render_template('pressKit.html')   
 
 @app.route('/register', methods=['POST'])
 def register():

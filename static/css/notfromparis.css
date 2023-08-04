@@ -108,7 +108,7 @@ header a {
     width: 100%;
   }
 
-  #bio {
+  #PressKit {
     padding-top: 8rem !important;
     padding-bottom: 6rem;
     width: 100%;
@@ -174,9 +174,9 @@ header a {
   width: 100%;
 }
 
-/* CUSTOMIZE BIO CONTAINER
+/* CUSTOMIZE PRESS KIT CONTAINER
   -------------------------------------------------- */
-#bio {
+#PressKit {
   padding-top: 11rem;
   width: 100%;
   height: auto;
