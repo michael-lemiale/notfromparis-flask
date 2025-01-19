@@ -1,5 +1,5 @@
 # notfromparis-flask
-Branding website for [NOT FROM PARIS](https://www.notfromparismusic.com)
+Branding website for <a href="https://www.notfromparismusic.com" target="_blank">NOT FROM PARIS</a>
 
 ## Initial Setup
 ```
