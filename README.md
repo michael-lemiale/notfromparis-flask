@@ -1,6 +1,6 @@
 # notfromparis-flask
 
-Branding website for NOT FROM PARIS
+Branding website for <a href="https://www.notfromparismusic.com" target="_blank">NOT FROM PARIS</a>
 
 ## Initial Setup
 
