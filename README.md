@@ -21,3 +21,9 @@ uv sync
 ```bash
 uv run main.py
 ```
+
+## Update Dependencies for Vercel
+
+```bash
+uv pip freeze > requirements.txt
+```
