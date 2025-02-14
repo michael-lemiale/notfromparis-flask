@@ -31,6 +31,7 @@ class EmailResponse(db.Model):
     email = db.Column(db.String(250), unique=True, nullable=False)
     time_created = db.Column(db.DateTime(), default=datetime)
 
+
 @app.template_global()
 def get_cdn_url(filename):
     """Grab CDN URL to grab static files"""
