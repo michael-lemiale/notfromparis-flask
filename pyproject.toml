@@ -6,7 +6,6 @@ dependencies = [
     "flask==3.1.0",
     "flask-bootstrap==3.3.7.1",
     "flask-sqlalchemy==3.0.2",
-    "gunicorn==23.0.0",
     "jinja2==3.1.5",
     "sqlalchemy==2.0.38",
     "python-dotenv==1.0.1",
