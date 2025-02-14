@@ -4,14 +4,20 @@ Branding website for <a href="https://www.notfromparismusic.com" target="_blank"
 
 ## Initial Setup
 
+### Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+
+### Install dependencies
+
+```bash
+uv sync
 ```
 
 ## Run the app
 
-```
-flask --app main run
+```bash
+uv run main.py
 ```
