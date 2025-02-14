@@ -1,3 +1,4 @@
 {
+  "buildCommand": "web: gunicorn main:app",
   "rewrites": [{ "source": "/(.*)", "destination": "/main" }]
 }
